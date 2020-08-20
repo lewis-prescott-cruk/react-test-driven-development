@@ -9,3 +9,9 @@ it.skip("should display the start count as 0", () => {
 
   expect(getByTestId("count")).toHaveTextContent("Count: 0");
 });
+
+it("should increase the count by one when the user increments the count", () => {
+  const { getByTestId, getByText} = render(<Counter />);
+  fireEvent.click(getByText("Increment"));
+  expect(getByTestId("count")).toHaveTextContent("Count: 1");
+});
