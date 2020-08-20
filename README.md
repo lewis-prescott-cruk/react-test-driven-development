@@ -6,6 +6,9 @@
 # Install dependencies
 yarn
 
-# Run tests
+# Run Jest tests
 yarn test
+
+# Run Cypress Tests
+yarn run cypress:open
 ```
