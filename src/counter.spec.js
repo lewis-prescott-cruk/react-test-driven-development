@@ -11,8 +11,9 @@ describe('Counter', () => {
     cy.contains('Count: 0')
   })
 
-  it.skip('should increment count by 1', () => {
-    // https://docs.cypress.io/guides/getting-started/writing-your-first-test.html#Step-4-Make-an-assertion
+  it('should increment count by 1', () => {
+    cy.get('button').click()
+    cy.get('[data-testid=count]').should('have.text', 'Count: 1')
   })
 
   // Extension

@@ -12,6 +12,6 @@ it("should display the start count as 0", () => {
 
 it("should increase the count by one when the user increments the count", () => {
   const { getByTestId, getByText} = render(<Counter />);
-  // https://testing-library.com/docs/dom-testing-library/cheatsheet#events
+  fireEvent.click(getByText('Increment'));
   expect(getByTestId("count")).toHaveTextContent("Count: 1");
 });

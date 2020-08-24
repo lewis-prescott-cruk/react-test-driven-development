@@ -6,10 +6,12 @@
 
 import React, { useState } from "react";
 export const Counter = () => {
+  const [counter, setCounter] = useState(0);
+
   return (
     <>
-      <span data-testid="count">Count: </span>
-      <button type="button" onClick={() => 0}>
+      <span data-testid="count">Count: {counter}</span>
+      <button type="button" onClick={() => setCounter(counter+1)}>
         Increment
       </button>
     </>
