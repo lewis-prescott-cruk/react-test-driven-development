@@ -1,4 +1,4 @@
-# From FizzBuzz to React, Practical Test Driven Development in JavaScript
+# Practical Acceptance Test Driven Development in JavaScript
 
 ## Getting started
 
@@ -6,8 +6,6 @@
 # Install dependencies
 yarn
 
-# Run Jest tests
-yarn test
 
 # Run Cypress Tests
 yarn run cypress:open
